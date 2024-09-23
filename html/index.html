@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Employee Payroll Home</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+
+</head>
+<body>
+    <header class="header-content header" id="headerID">
+        <div class="logo-content">
+            <img src="../assets/logo.png" alt="">
+            <div>
+                <span class="emp-text">
+                    EMPLOYEE
+                </span>
+                <br>
+                <sapn class="emp-text emp-payroll">PAYROLL</sapn>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="header-content">
+            <div class="emp-detail-text">
+                Employee Details <div class="emp-count"></div>
+            </div>
+            <div class="searchBar">
+                <input  id = "search-input" class = "search" type = "text" placeholder="Search user"/>
+                <img  id ="search-button" class = "searchIcon" src = "../assets/icons8-search-50.png" alt = "">
+            </div>
+            
+            <div class = "searchAddUser-cnt">
+                <a href="./EmpPayrollRegister.html" class="add-button">
+                    <img src="../assets/icons8-add-24.png" alt=""> Add User
+                </a>
+            </div>
+        </div>
+
+        <table id="display" class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Start Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div>
+        <a href="registeration.html" class="button-link">Go to Second Page</a>
+    </div>    
+</body>
+
+</html> 
