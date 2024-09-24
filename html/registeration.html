@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Employee Payroll</title>
         <link rel="stylesheet" href="../css/registeration.css" />
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
   </head>
   <body>
     <header class="header-content header" id="headerID">
@@ -29,8 +30,9 @@
             type="text"
             id="emp-name"
             placeholder="Your name"
-            required
+            
           />
+          <div id="nameError" class="error-message"></div>  
         </div>
 
         <div class="row-content">
@@ -42,7 +44,7 @@
                 name="profile"
                 id="profile1"
                 value="../assets/profile1.png"
-                required
+                
               />
               <img src="../assets/profile1.png" class="profile" alt="" />
             </label>
@@ -52,7 +54,7 @@
                 name="profile"
                 id="profile2"
                 value="../assets/profile2.png"
-                required
+              
               />
               <img src="../assets/profile2.png" class="profile" alt="" />
             </label>
@@ -62,7 +64,7 @@
                 name="profile"
                 id="profile3"
                 value="../assets/profile3.png"
-                required
+                
               />
               <img src="../assets/profile3.png" class="profile" alt="" />
             </label>
@@ -72,7 +74,7 @@
                 name="profile"
                 id="profile4"
                 value="../assets/profile4.png"
-                required
+              
               />
               <img src="../assets/profile4.png" class="profile" alt="" />
             </label>
@@ -227,15 +229,16 @@
         </div>
 
         <div class="buttonParent">
-          <button class="button cancelButton" id = "cancelBtn">Cancel</button>
+          <button class="button cancelButton" id = "cancelBtn" >Cancel</button>
           <div class="submit-reset">
-            <button class="button submitButton" id="submitButton">
+            <button class="button submitButton" id="submitButton" >
               Submit
             </button>
-            <button class="button resetButton" id="resetButton">Reset</button>
+            <button class="button resetButton" id="resetButton" >reset</button>
           </div>
         </div>
       </form>
     </div>
+    <script src="../javascript/registration.js"></script>
   </body>
 </html>
