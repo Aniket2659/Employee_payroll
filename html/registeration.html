@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Employee Payroll</title>
-        <link rel="stylesheet" href="../css/registeration.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Payroll</title>
+    <link rel="stylesheet" href="../css/registeration.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <header class="header-content header" id="headerID">
@@ -29,8 +30,8 @@
             type="text"
             id="emp-name"
             placeholder="Your name"
-            required
           />
+          <div id="nameError" class="error-message"></div>
         </div>
 
         <div class="row-content">
@@ -42,7 +43,6 @@
                 name="profile"
                 id="profile1"
                 value="../assets/profile1.png"
-                required
               />
               <img src="../assets/profile1.png" class="profile" alt="" />
             </label>
@@ -52,7 +52,6 @@
                 name="profile"
                 id="profile2"
                 value="../assets/profile2.png"
-                required
               />
               <img src="../assets/profile2.png" class="profile" alt="" />
             </label>
@@ -62,7 +61,6 @@
                 name="profile"
                 id="profile3"
                 value="../assets/profile3.png"
-                required
               />
               <img src="../assets/profile3.png" class="profile" alt="" />
             </label>
@@ -72,7 +70,6 @@
                 name="profile"
                 id="profile4"
                 value="../assets/profile4.png"
-                required
               />
               <img src="../assets/profile4.png" class="profile" alt="" />
             </label>
@@ -140,20 +137,20 @@
         </div>
 
         <div class="row-content">
-            <label for="salary" class="label text">Choose your salary: </label>
-            <select name="salary" id="salary" class="input">
-              <option value="" disabled selected>Salary</option>
-              <option value="300000">300,000</option>
-              <option value="400000">400,000</option>
-              <option value="500000">500,000</option>
-              <option value="1000000">1,000,000</option>
-              <option value="2000000">2,000,000</option>
-              <option value="3000000">3,000,000</option>
-              <option value="4000000">4,000,000</option>
-              <option value="5000000">5,000,000</option>
-            </select>
-          </div>
-        
+          <label for="salary" class="label text">Choose your salary: </label>
+          <select name="salary" id="salary" class="input">
+            <option value="" disabled selected>Salary</option>
+            <option value="300000">300,000</option>
+            <option value="400000">400,000</option>
+            <option value="500000">500,000</option>
+            <option value="1000000">1,000,000</option>
+            <option value="2000000">2,000,000</option>
+            <option value="3000000">3,000,000</option>
+            <option value="4000000">4,000,000</option>
+            <option value="5000000">5,000,000</option>
+          </select>
+        </div>
+
         <div class="row-content">
           <label for="startDate" class="label text">Start Date</label>
           <div>
@@ -219,15 +216,11 @@
 
         <div class="row-content">
           <label for="notes" class="label text">Notes</label>
-          <textarea
-            name="notes"
-            id="notes"
-            class="input"
-          ></textarea>
+          <textarea name="notes" id="notes" class="input"></textarea>
         </div>
 
         <div class="buttonParent">
-          <button class="button cancelButton" id = "cancelBtn">Cancel</button>
+          <button class="button cancelButton" id="cancelBtn">Cancel</button>
           <div class="submit-reset">
             <button class="button submitButton" id="submitButton">
               Submit
@@ -237,5 +230,6 @@
         </div>
       </form>
     </div>
+    <script src="../javascript/registration.js"></script>
   </body>
 </html>
