@@ -1,0 +1,54 @@
+{
+  "employees": [
+    {
+      "name": "aniket babar",
+      "profile": "../assets/profile4.png",
+      "gender": "male",
+      "departments": [
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "400000",
+      "startDate": "18-Nov-2023",
+      "notes": "aniket",
+      "id": "9e05"
+    },
+    {
+      "name": "pratiksha yadav",
+      "profile": "../assets/profile1.png",
+      "gender": "female",
+      "departments": [
+        "HR",
+        "Finance"
+      ],
+      "salary": "500000",
+      "startDate": "16-Sept-2023",
+      "notes": "na",
+      "id": "f374"
+    },
+    {
+      "id": "a509",
+      "name": "shantnu rawade",
+      "profile": "../assets/profile4.png",
+      "gender": "male",
+      "departments": [
+        "HR"
+      ],
+      "salary": "2000000",
+      "startDate": "17-Sept-2023",
+      "notes": "na"
+    },
+    {
+      "id": "6ef8",
+      "name": "aditya deshmukh",
+      "profile": "../assets/profile4.png",
+      "gender": "male",
+      "departments": [
+        "Engineer"
+      ],
+      "salary": "400000",
+      "startDate": "18-Dec-2023",
+      "notes": "na"
+    }
+  ]
+}
